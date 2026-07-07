@@ -366,52 +366,19 @@
   padding: 0.5rem 0;
 }
 .kevin-textarea::placeholder { color: rgba(230, 240, 255, 0.4); }
-.kevin-voice-btn,
 .kevin-send {
   width: 44px; height: 44px;
   flex-shrink: 0;
   border: 0;
   border-radius: 14px;
-  display: grid; place-items: center;
-  cursor: pointer;
-  transition: transform 120ms ease, opacity 120ms ease, background 120ms ease;
-}
-.kevin-voice-btn {
-  background: rgba(255, 255, 255, 0.08);
-  color: #dff8ff;
-}
-.kevin-voice-btn.active {
-  background: rgba(0, 212, 255, 0.22);
-  color: #fff;
-  box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.35);
-}
-.kevin-voice-btn.muted {
-  opacity: 0.55;
-}
-.kevin-voice-btn svg,
-.kevin-send svg {
-  width: 18px;
-  height: 18px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.kevin-send {
   background: linear-gradient(135deg, #00d4ff, #1a6bff);
   color: #061024;
+  display: grid; place-items: center;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
 }
-.kevin-voice-btn:disabled,
 .kevin-send:disabled { opacity: 0.4; cursor: not-allowed; }
-.kevin-voice-btn:not(:disabled):active,
 .kevin-send:not(:disabled):active { transform: scale(0.95); }
-.kevin-voice-status {
-  margin-top: 0.6rem;
-  font-size: 0.8rem;
-  color: #ffb2bc;
-  text-align: center;
-}
 
 @media (prefers-reduced-motion: reduce) {
   .kevin-logo { animation: none; }
